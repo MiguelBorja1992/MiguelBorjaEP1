@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="MiguelBorjaEP1.MainPage">
+
+    <StackLayout>
+        <Image Source="https://sbsconsulting.com.ec/wp-content/uploads/2018/01/LOGO-UISRAEL-768x209.png" />
+        <Frame BackgroundColor="Blue" CornerRadius="0">
+            <Label Text="Ingreso" 
+           HorizontalOptions="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+
+        <Entry x:Name="TxtUsuario" Placeholder="Ingrese Usuario"/>
+        <Entry x:Name="TxtPass" Placeholder="Ingrese Contraseña" IsPassword="True"/>
+        <Button x:Name="btnIngresar"
+                Text="Ingresar"
+                Clicked="btnIngresar_Clicked"/>
+    </StackLayout>
+
+</ContentPage>

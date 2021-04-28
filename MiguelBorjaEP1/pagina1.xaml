@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="MiguelBorjaEP1.pagina1">
+   
+
+    <ContentPage.Content>
+        
+        <Grid Margin="20,35,20,20">
+            
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.5*" />
+                <ColumnDefinition Width="0.5*" />
+                
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="50" />
+            </Grid.RowDefinitions>
+            <Label x:Name="lblusuario" IsVisible="false" />
+            <Label Text="Nombre" />
+            <Entry x:Name="txtNombre" Grid.Column="1" />
+            <Label Grid.Row="1" Text="Monto Inicial" />
+            <Entry x:Name="txtMonto" Grid.Column="1" Grid.Row="1"/>
+            <Label Grid.Row="2" Text="Pago Mensual" />
+            <Entry x:Name="txtPago" Grid.Column="1" Grid.Row="2"/>
+            <Label Grid.Row="3" Text="Saldo" />
+            <Entry x:Name="txttotal" Grid.Column="1" Grid.Row="3"/>
+            <Button x:Name="btnCalcular" Text="Calcular" Clicked="btnCalcular_Clicked" Grid.Row="4"/>
+            <Button x:Name="btnGuardar" Text="Guardar" Clicked="btnGuardar_Clicked" Grid.Column="1" Grid.Row="4"/>
+        </Grid>
+
+    </ContentPage.Content>
+</ContentPage>
